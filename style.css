@@ -136,7 +136,7 @@ main {
 
 .social-proof-card {
   padding: 2.3rem 2rem;
-  width: 350px;
+  width: 30%;
   height: 235px;
   background-color: var(--color-primary-dark-mag);
   border-radius: 8px;
