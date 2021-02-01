@@ -31,10 +31,10 @@ main {
   display: flex;
 }
 .confidential-box {
-  flex: 4;
+  flex: 1;
 }
 .review-box {
-  flex: 6;
+  flex: 1;
 }
 .review-holder {
   max-width: 500px;
@@ -55,13 +55,13 @@ main {
 }
 
 .review1 {
-  margin-left: 16px;
+  margin-left: 0px;
 }
 .review2 {
-  margin-left: 64px;
+  margin-left: 2rem;
 }
 .review3 {
-  margin-left: 112px;
+  margin-left: 4rem;
 }
 h1 {
   color: var(--color-primary-dark-mag);
