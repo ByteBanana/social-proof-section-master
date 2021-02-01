@@ -55,13 +55,13 @@ main {
 }
 
 .review1 {
-  margin-left: 0px;
+  margin: 1.5rem 4rem 1.5rem 0;
 }
 .review2 {
-  margin-left: 2rem;
+  margin: 1.5rem 2rem 1.5rem 2rem;
 }
 .review3 {
-  margin-left: 4rem;
+  margin: 1.5rem 0 1.5rem 4rem;
 }
 h1 {
   color: var(--color-primary-dark-mag);
