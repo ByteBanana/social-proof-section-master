@@ -1,0 +1,248 @@
+:root {
+  --color-primary-dark-mag: hsl(300, 43%, 22%);
+  --color-primary-soft-ping: hsl(333, 80%, 76%);
+
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-dark-gray-mag: hsl(303, 10%, 53%);
+  --color-neutral-light-gray-mag: hsl(300, 24%, 96%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  max-height: 800px;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 8rem 10.5rem 0px 10.5rem;
+}
+
+.header {
+  display: flex;
+}
+.confidential-box {
+  flex: 4;
+}
+.review-box {
+  flex: 6;
+}
+.review-holder {
+  max-width: 500px;
+  padding: 1rem 0px;
+  border-radius: 8px;
+  background-color: var(--color-neutral-light-gray-mag);
+  display: flex;
+  flex-direction: row;
+  max-height: 57px;
+  margin: 1.5rem;
+}
+.star-holder {
+  padding: 0 2.4rem;
+}
+.review-holder h2 {
+  font-size: 0.9rem;
+  color: var(--color-primary-dark-mag);
+}
+
+.review1 {
+  margin-left: 16px;
+}
+.review2 {
+  margin-left: 64px;
+}
+.review3 {
+  margin-left: 112px;
+}
+h1 {
+  color: var(--color-primary-dark-mag);
+  font-size: 3rem;
+}
+
+.title {
+  max-width: 420px;
+}
+
+.bg-bot-container {
+  position: fixed;
+  border: 1px solid white;
+  width: 1085px;
+  height: 673px;
+  z-index: 1;
+  right: 0px;
+  bottom: 0px;
+}
+
+.bg {
+  z-index: -1;
+}
+.bg-desk-bot {
+  position: fixed;
+  max-width: 1085px;
+  max-height: 673px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+.bg-desk-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: 584px;
+  max-height: 362px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bg-mobile-bot {
+  display: none;
+}
+
+.bg-mobile-top {
+  display: none;
+}
+
+main {
+  display: flex;
+}
+.header {
+  display: flex;
+  width: 100%;
+}
+.description {
+  line-height: 1.8rem;
+  margin-top: 1rem;
+}
+
+.social-proof-box {
+  display: flex;
+  margin-top: 4rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social-proof-card {
+  padding: 2.3rem 2rem;
+  width: 350px;
+  height: 235px;
+  background-color: var(--color-primary-dark-mag);
+  border-radius: 8px;
+}
+
+.social-proof-card .header img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  margin-right: 1.4rem;
+}
+.social-proof-card .header .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.social-proof-card .header .info h3 {
+  font-size: 1rem;
+  color: var(--color-neutral-white);
+}
+.social-proof-card .header .info p {
+  color: var(--color-primary-soft-ping);
+}
+.social-proof-card .body p {
+  padding: 1.7rem 0px;
+  color: var(--color-neutral-light-gray-mag);
+  opacity: 0.7;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.info-2 {
+  margin-top: 1rem;
+}
+
+.info-3 {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .bg-desk-top {
+    display: none;
+  }
+
+  .bg-mobile-top {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1.5rem 0 1.5rem;
+    width: 375px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .confidential-box .title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .confidential-box .description {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    word-spacing: 3px;
+  }
+
+  .review-box {
+    margin-top: 2.66rem;
+  }
+
+  .review-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0px !important;
+    text-align: center;
+    padding: 1rem;
+    min-height: 80px;
+    height: 100%;
+  }
+
+  .social-proof-box {
+    flex-direction: column;
+    margin-top: 3.33rem;
+  }
+
+  .social-proof-card {
+    width: auto;
+    padding: 2.66rem 2rem;
+  }
+
+  .social-proof-card .header {
+    flex-direction: row;
+  }
+
+  .social-proof-card .body p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    word-spacing: 0.1rem;
+  }
+}
